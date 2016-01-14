@@ -8,11 +8,14 @@
     "webpack": "~1.12.11",
     "webpack-dev-server": "~1.14.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "~1.12.11",
+    "html-webpack-plugin": "~1.7.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build --host 0.0.0.0 --watch-poll --inline"
+    "start": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build --host 0.0.0.0 --watch-poll --inline"
   },
   "repository": {
     "type": "git",
