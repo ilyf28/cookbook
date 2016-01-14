@@ -1,12 +1,26 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
-
-
-module.exports = {
+var config = {
     entry: path.resolve(__dirname, 'app/main.js'),
     output: {
-        path: path.resolve(__dirname, 'build'),
+        // path: path.resolve(__dirname, 'build'),
+        path: '/usr/share/nginx/html/build',
         filename: 'bundle.js',
     },
-    plugins: [new HtmlWebpackPlugin()]
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
+    module: {
+        loaders: [
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                loader: 'babel',
+                query: {
+                    presets: ['es2015', 'react']
+                }
+            }
+        ]
+    }
 };
+
+module.exports = config;
