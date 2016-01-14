@@ -4,6 +4,8 @@
 `npm i webpack --save-dev`  
 `npm i html-webpack-plugin --save-dev`  
 `npm i webpack-dev-server --save`  
+`npm i react react-dom --save`  
+`npm i babel-loader babel-preset-es2015 babel-preset-react --save-dev`  
   
 1. Run webpack dev server  
 `npm run start`  
