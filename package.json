@@ -11,7 +11,10 @@
   },
   "devDependencies": {
     "webpack": "~1.12.11",
-    "html-webpack-plugin": "~1.7.0"
+    "html-webpack-plugin": "~1.7.0",
+    "babel-loader": "~6.2.1",
+    "babel-preset-react": "~6.3.13",
+    "babel-preset-es2015": "~6.3.13"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
