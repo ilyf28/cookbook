@@ -4,12 +4,23 @@ import React from 'react';
 export default class Hello extends React.Component {
     render() {
         return (
-            <div className="MyComponent-wrapper">
-                <h1>Hello world</h1>
+            <div>
+                <div className="MyComponent-wrapper">
+                    <h1>Hello world</h1>
+                </div>
+                <ImageClass />
             </div>
         );
     }
 }
+
+var ImageClass = React.createClass({
+    render: function() {
+        return (
+            <img src={require('./4.jpg')} />
+        );
+    }
+});
 
 // var Hello = React.createClass({
 //     render: function() {
