@@ -1,4 +1,4 @@
-require('./component.css');
+require('../css/component.css');
 import React from 'react';
 
 export default class Hello extends React.Component {
@@ -17,7 +17,7 @@ export default class Hello extends React.Component {
 var ImageClass = React.createClass({
     render: function() {
         return (
-            <img src={require('./4.jpg')} />
+            <img src={require('../images/4.jpg')} />
         );
     }
 });

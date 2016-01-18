@@ -1,7 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
 var config = {
-    entry: path.resolve(__dirname, 'app/main.js'),
+    entry: path.resolve(__dirname, 'resources/app.js'),
     output: {
         path: path.resolve(__dirname, 'build'),
         // path: '/usr/share/nginx/html/build',
