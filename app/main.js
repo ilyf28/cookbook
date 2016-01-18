@@ -5,5 +5,7 @@ import Hello from './component.jsx';
 main();
 
 function main() {
-    ReactDOM.render(<Hello />, document.getElementById('app'));
+    var container = document.createElement('div');
+    document.body.appendChild(container);
+    ReactDOM.render(<Hello />, container);
 }

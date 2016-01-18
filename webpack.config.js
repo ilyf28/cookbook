@@ -1,4 +1,3 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
 var config = {
     entry: path.resolve(__dirname, 'app/main.js'),
@@ -25,30 +24,7 @@ var config = {
             test: /\.(png|jpg)$/,
             loader: 'url?limit=25000'
         }]
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            inject: 'body',
-            templateContent: function() {
-                var templateContentString = ''
-                + '<!DOCTYPE html>'
-                + '<html>'
-                  + '<head>'
-                    + '<meta charset="UTF-8">'
-                    + '<title>Webpack App</title>'
-                    
-                    
-                  + '</head>'
-                  + '<body>'
-                    
-                    + '<div id="app"></div>'
-                    
-                  + '</body>'
-                + '</html>';
-                return templateContentString;
-            }
-        })
-    ]
+    }
 };
 
 module.exports = config;

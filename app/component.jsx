@@ -21,13 +21,3 @@ var ImageClass = React.createClass({
         );
     }
 });
-
-// var Hello = React.createClass({
-//     render: function() {
-//         return (
-//             <div className="MyComponent-wrapper">
-//                 <h1>Hello world</h1>
-//             </div>
-//         );
-//     }
-// });
