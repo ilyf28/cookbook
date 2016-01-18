@@ -1,3 +1,4 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
 var config = {
     entry: path.resolve(__dirname, 'app/main.js'),
@@ -24,7 +25,8 @@ var config = {
             test: /\.(png|jpg)$/,
             loader: 'url?limit=25000'
         }]
-    }
+    },
+    plugins: [new HtmlWebpackPlugin()]
 };
 
 module.exports = config;
