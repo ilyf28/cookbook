@@ -9,6 +9,7 @@
 `npm i css-loader style-loader --save-dev`  
 `npm i es6-promise`  
 `npm i url-loader --save-dev`  
+`npm i react-router`  
   
 1. Run webpack dev server  
 `npm run start`  
