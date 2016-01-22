@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Routes from './routes';
+import routes from "./mainRoutes";
 
 var container = document.createElement('div');
 document.body.appendChild(container);
-ReactDOM.render(Routes, container);
+ReactDOM.render(routes, container);
